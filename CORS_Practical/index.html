@@ -1,0 +1,12 @@
+<h1>Deployed via Terraform</h1>
+
+<div id='fetchdata'></div>
+
+<script>
+
+var tofetch = document.getElementById("fetchdata");
+
+fetch('http://mywebsite2022new.s3-website.ap-south-1.amazonaws.com')
+    .then(response => response.text())
+.then(data =>  {  tofetch.innerHTML= data });
+</script>
